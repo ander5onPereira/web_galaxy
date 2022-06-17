@@ -1,15 +1,15 @@
 {
   "name": "web_galaxy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "version-select": "version-select",
-    "prepublish": "npm-auto-version",
-    "postpublish": "git push origin --tags"
+    "version:patch": "yarn version --patch --patch",
+    "version:minor": "yarn version --patch --minor",
+    "version:major": "yarn version --patch --major"
   },
   "dependencies": {
     "next": "11.1.2",
